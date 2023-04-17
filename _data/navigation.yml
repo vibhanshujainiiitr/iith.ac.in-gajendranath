@@ -1,0 +1,55 @@
+# main links
+main:
+  - title: "Home"
+    url: index.html
+  - title: "Research"
+    url: /research
+  - title: "Publications"
+    url: /publication
+  - title: "People"
+    url: /people
+  - title: "Teaching"
+    url: /teaching
+  - title: "Downloads"
+    url: /download
+  - title: "Contact"
+    url: /contact
+  - title: "Webteam"
+    url: /webteam
+
+
+
+
+
+research:
+      - title: "Solar and Vibration based Hybrid Energy Scavenging System"
+      - title: "Ultra-Low Power Circuits For Autonomous Sensor Nodes In IoT Networks"
+      - title: "Design, Analysis, Verification and Performance evaluation of Analog to Digital Interface Single-channel ASIC for HP Capacitive Gyroscope"
+      - title: "Design and Characterization of MEMS Gyroscope with COTS (commercially off the shelf) Component"
+      - title: "Co-Design and Development of Space Grade X-band Integrated 15W Gallium Nitride (GaN) Power Ampdivfier"
+      - title: "Design and analysis of high accuracy MEMS accelerometers and gyroscope for closed loop sensing"
+      - title: "Design of Dynamic MAC and PHY SoC for Low Power and Long Range Networks"
+      - title: "An Ultra-sensitive Metal Oxide Nano-fiber Platform for the Early Detection of MMP2, MMP9 and C3 Proteins from the Tear Fluid of Infants Retinopathy"
+      - title: "Affordable Deep Learning Based Point of care Cardiac Monitoring for Heart Attack Survivors Powered by Lab On-Chip Technology"
+      - title: "e-GUNA: Sensory Assessment for Quadivty of Fermented Foods from North-East India"
+
+
+teaching:
+  - title: "MOOC Courses"
+  - title: "UnderGraduate Courses"
+    children:
+      - title: "Electric Circuits and Network Analysis"
+      - title: "Applied Digital Logic Design"
+      - title: "Mixed Signal Electronics"
+      - title: "Digital Signal Processing"
+      - title: "Digital System Design"
+      - title: "Analog Electronics"
+  - title: "PostGraduate Courses"
+    children:
+      - title: "Analog IC Design"
+      - title: "Advanced Analog IC Design"
+      - title: "Mixed Signal Circuit Design"
+      - title: "VLSI Design Lab"
+      - title: "System Design Lab"
+      - title: "IC Characterization Lab"
+      - title: "PMIC Design"

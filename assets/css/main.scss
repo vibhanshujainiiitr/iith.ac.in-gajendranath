@@ -1,0 +1,321 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+search: false
+---
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 0;
+  text-decoration: none;
+  list-style: none;
+  color: #0e0e0e;
+  font-family: "Poppins", sans-serif;
+}
+
+.highlight-blue
+{
+  color: #0077b5 ;
+}  
+
+
+section
+{
+        padding-inline: 1.5rem;
+}
+@mixin h1-size
+{
+  @media (min-width: 0) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (min-width: 720px) {
+    h1 {
+      font-size: 2.3rem;
+    }
+  }
+  
+  h1 {
+    color: black;
+  
+    &:hover {
+      transform: scale(1.02);
+    }
+  }
+}
+
+
+
+                
+.homeDescription {
+  @include h1-size;
+
+
+}
+
+
+
+// ================Research Section==================//
+
+.research
+{
+
+        .cta
+        {
+          text-align: right;
+        }
+        .wrapper {
+          padding-top: 0px;
+          padding-bottom: 100px;
+          width: 100%;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+        }
+        
+        .card {
+          top: 10px;
+          position: sticky;
+          border: 1px solid #0e0e0e;
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+          background-color: white;
+          color: #333;
+          padding: 40px;
+          border-radius: 10px;
+
+          width: 100%;
+          height: 250px;
+        
+          h2 {
+            padding: 0;
+          }
+          span {
+            display: block;
+            font-size: 14px;
+            color: tomato;
+          }
+        }
+        
+        @for $i from 1 through 10 {
+          .card:nth-child(#{$i}n) {
+            top: $i * 10px;
+          }
+        }
+
+}
+
+// ===================Publications==================//
+
+
+.publications
+{
+      @include h1-size ;
+
+      a
+      {
+        &:hover
+        {
+          letter-spacing: 2px;
+        }
+      }
+
+      >div
+      {
+        margin-bottom: 5rem;
+      }
+
+      .anchors
+      {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
+      }
+
+
+
+}
+
+
+// ===================People==================//
+@mixin data
+{
+
+      padding-block: 1rem;
+      box-shadow: inset 0 0px 3px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      transition: 0.25s;
+
+
+      &:hover
+      {
+        box-shadow: inset 0 0px 3px 1px rgba(0, 0, 0, 0.1);
+      }
+
+      h2
+      {
+        margin: 0;
+        margin-bottom: 1rem;
+      }
+    
+      h6
+      {
+        margin: 0;
+        font-weight: 100;
+        margin-bottom: 0.5rem;
+      }
+
+      a i{
+        font-size: 1.5rem;
+        color: #0077b5;
+      
+        transition: 0.15s;
+        &:hover
+        {
+          transform: scaleX(1.1);
+        }
+      }
+
+}
+
+
+
+.people
+{
+  @include h1-size;
+  
+  .card {
+    width: 300px;
+    
+    font-family: arial;
+    .data
+    {
+      @include data;
+    }
+  }
+  
+
+  
+  @mixin two-cards
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  
+    padding-block: 1rem;
+  }
+
+  @mixin thirteen-cards
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+  }
+  
+  
+  .PhD, .Master, .Alumni-PhD
+  {
+    @include two-cards;
+  }
+
+  .Alumni-Master
+  {
+    @include thirteen-cards
+  }
+
+
+}  
+
+// =====================Teaching===============//
+.teaching > div > *
+{
+
+  @include h1-size;
+
+  margin-block: 2rem;
+}
+
+
+
+
+
+// =====================Downloads=================//
+
+// =====================Contact===================//
+.contact
+{
+
+
+  padding-block: 1.5rem;
+
+  padding-top: 2.5rem;
+
+    @include h1-size;
+
+    h1
+    {
+      font-weight: 400;
+    }
+}
+
+// ==========================webteam==================//
+
+.webteam
+{
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    .data
+    {
+      @include data;
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+
+
+  .webteam-flex, .icon-flex
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+
+
