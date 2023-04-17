@@ -306,16 +306,31 @@ section
   }
 
 
-  .webteam-flex, .icon-flex
+  .webteam-flex
   {
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
   }
 }
 
 
+// ===========footer===========//
+.social-icons a 
+{
+  color: white;
+}
 
+.page__footer-copyright
+{
+  display: none;
+}
 
+.social-icons strong
+{
+  color: white;
+}
