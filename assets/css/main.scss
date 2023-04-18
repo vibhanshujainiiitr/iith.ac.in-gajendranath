@@ -30,6 +30,7 @@ section
 {
         padding-inline: 1.5rem;
 }
+
 @mixin h1-size
 {
   @media (min-width: 0) {
@@ -40,13 +41,13 @@ section
   
   @media (min-width: 600px) {
     h1 {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   
   @media (min-width: 720px) {
     h1 {
-      font-size: 2.3rem;
+      font-size: 1.5rem;
     }
   }
   
@@ -54,9 +55,30 @@ section
     color: black;
   
     &:hover {
-      transform: scale(1.02);
+      transform: scalex(1.02);
     }
   }
+}
+@mixin p-size
+{
+  @media (min-width: 0) {
+    p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (min-width: 720px) {
+    p {
+      font-size: .8rem;
+    }
+  }
+
 }
 
 
@@ -64,8 +86,7 @@ section
                 
 .homeDescription {
   @include h1-size;
-
-
+  @include p-size;
 }
 
 
@@ -128,6 +149,7 @@ section
 .publications
 {
       @include h1-size ;
+      @include p-size;
 
       a
       {
@@ -256,6 +278,8 @@ section
 {
 
   @include h1-size;
+  @include p-size;
+
 
   margin-block: 2rem;
 }
@@ -333,4 +357,14 @@ section
 .social-icons strong
 {
   color: white;
+}
+
+
+
+
+.h-card img
+{
+  width: 10000px;
+  max-width: 200px;
+  border-radius: 0;
 }
