@@ -16,13 +16,13 @@ minimal_mistakes_skin: "contrast" # "air", "aqua", "default", "dark", "dirt", "n
 
 # Site Settings
 locale: "en-US"
-title: ""
+title: "Gajendranath Chaudhry"
 title_separator: "|"
-subtitle: ""
+subtitle: "IIT Hyderabad"
 name: "Gajendranath Chaudhry"
-description: "An amazing website."
-url: # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: # the subpath of your site, e.g. "/blog"
+description: "Dr. Gajendranath Chowdary is deeply passionate about advancing Analog and Mixed-Signal Circuit Design, with a focus on developing sustainable, ultra-low-power solutions for next-generation IoT nodes. With a strong foundation in both academia and industry, his research is driven by the vision of building a smarter, more efficient future—through cutting-edge technology and the cultivation of skilled, future-ready engineers. His commitment to innovative teaching and mentorship reflects his belief that empowering the next generation is just as important as pioneering technical breakthroughs."
+url: # the base hostname & protocol for your site e.g.
+baseurl: ""
 repository: # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -104,7 +104,7 @@ analytics:
 # Site Author
 author:
   name: "Gajendranath Chaudhry"
-  avatar: "assets/images/profile.webp"
+  avatar: "assets/images/profile.jpg"
   bio: >-
     The research interests of Dr. Gajendranath Chowdary primarily lie with Analog and Mixed Signal Circuit Design for sustainable, next-generation ultra-low-power IoT nodes. With a deep interest in teaching and significant industry experience, the primary goal of his research is to build a better next generation, both in terms of workforce and technology.
 
@@ -124,18 +124,12 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com"
-    - label: "LinkedIn"
-      icon: "fab fa-linkedin"
-      url: "https://www.linkedin.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com"
-    - label: "Stack Overflow"
-      icon: "fab fa-fw fa-stack-overflow"
-      url: "https://stackoverflow.com/users/82540"
+    - label: "Google Scholar"
+      icon: "fab fa-fw fa-graduation-cap"
+      url: "https://scholar.google.co.in/citations?user=6x0ZOCUAAAAJ&hl=en"
+    - label: "IEE Explore"
+      icon: "fab fa-fw fa-graduation-cap"
+      url: "https://ieeexplore.ieee.org/author/38255907300"
 
 # Reading Files
 include:
